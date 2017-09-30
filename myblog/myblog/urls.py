@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     #采用高级配置方法, 这里Blog为总路径, include('blog.urls' 为其子路径
-    url(r'^blog/', include('blog.urls')),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
 ]
